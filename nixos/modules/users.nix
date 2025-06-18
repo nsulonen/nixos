@@ -3,6 +3,5 @@
   users.users.niko = {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
-    packages = with pkgs; [ tree ];
   };
 }
