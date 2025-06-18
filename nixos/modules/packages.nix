@@ -3,9 +3,16 @@
   environment.systemPackages = with pkgs; [
     git
     vim
-    gh
-    vscode
+    #gh
+    #vscode
     wget
-    distrobox
+    #distrobox
   ];
+
+  programs.steam = {
+    enable = true;
+    gamescopeSession.enable = true;
+  };
+
+  programs.gamemode.enable = true;
 }
