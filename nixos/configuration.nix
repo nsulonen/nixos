@@ -10,16 +10,16 @@
       ./hardware-configuration.nix
       
       # Include the modules for various system configurations.
-      ./modules/boot.nix
-      ./modules/networking.nix
-      ./modules/locale.nix
-      ./modules/desktop.nix
-      ./modules/nvidia.nix
-      ./modules/sound.nix
-      ./modules/virtualization.nix
-      ./modules/users.nix
-      ./modules/packages.nix
-      ./modules/settings.nix
+      ../modules/nixos/boot.nix
+      ../modules/nixos/networking.nix
+      ../modules/nixos/locale.nix
+      ../modules/nixos/desktop.nix
+      ../modules/nixos/nvidia.nix
+      ../modules/nixos/sound.nix
+      ../modules/nixos/virtualization.nix
+      ../modules/nixos/users.nix
+      ../modules/nixos/packages.nix
+      ../modules/nixos/settings.nix
     ];
 
   # Allow unfree
