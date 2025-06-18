@@ -3,7 +3,7 @@
     
     inputs = {
         # Nixpkgs
-        nixpkgs = "github:NixOS/nixpkgs/nixos-25.05";
+        nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
 
         # Home Manager
         home-manager = {
