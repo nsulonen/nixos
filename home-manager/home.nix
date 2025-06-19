@@ -7,9 +7,9 @@
 }: {
   # Import modular configurations
   imports = [
-    ./modules/packages.nix
-    ./modules/programs.nix
-    ./modules/system.nix
+    ../modules/home-manager/packages.nix
+    ../modules/home-manager/programs.nix
+    ../modules/home-manager/system.nix
   ];
 
   nixpkgs = {
