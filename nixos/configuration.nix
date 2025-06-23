@@ -91,7 +91,7 @@
     git = {
       enable = true;
       userName = "nsulonen";
-      userEmail = "niko.sulonen@proton.me";
+      userMail = "niko.sulonen@proton.me";
       config = {
         init.defaultBranch = "main";
       };
