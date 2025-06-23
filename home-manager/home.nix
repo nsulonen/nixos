@@ -5,12 +5,7 @@
   pkgs,
   ...
 }: {
-  # Import modular configurations
-  imports = [
-    ./modules/home/packages.nix
-    ./modules/home/programs.nix
-    ./modules/home/system.nix
-  ];
+
 
   home = {
     username = "niko";
