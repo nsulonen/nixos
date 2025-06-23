@@ -98,7 +98,7 @@
 
     steam = {
       enable = true;
-      gamescopeSession = true;
+      gamescopeSession.enable = true;
     };
 
     gamemode.enable = true;
