@@ -10,16 +10,17 @@
       ./hardware-configuration.nix
       
       # Include the modules for various system configurations.
-      ../modules/nixos/boot.nix
-      ../modules/nixos/networking.nix
-      ../modules/nixos/locale.nix
-      ../modules/nixos/desktop.nix
-      ../modules/nixos/nvidia.nix
-      ../modules/nixos/sound.nix
-      ../modules/nixos/virtualization.nix
-      ../modules/nixos/users.nix
-      ../modules/nixos/packages.nix
-      ../modules/nixos/settings.nix
+      ../../modules/nixos/boot.nix
+      ../../modules/nixos/networking.nix
+      ../../modules/nixos/locale.nix
+      ../../modules/nixos/desktop.nix
+      ../../modules/nixos/nvidia.nix
+      ../../modules/nixos/sound.nix
+      ../../modules/nixos/virtualization.nix
+      ../../modules/nixos/users.nix
+      ../../modules/nixos/packages.nix
+      ../../modules/nixos/settings.nix
+      ../../modules/nixos/opengl.nix
     ];
 
   # This option defines the first version of NixOS you have installed on this particular machine,

@@ -7,17 +7,10 @@
 }: {
   # Import modular configurations
   imports = [
-    ./modules/home-manager/packages.nix
-    ./modules/home-manager/programs.nix
-    ./modules/home-manager/system.nix
+    ./modules/home/packages.nix
+    ./modules/home/programs.nix
+    ./modules/home/system.nix
   ];
-
-  nixpkgs = {
-    config = {
-      allowUnfree = true;
-      allowUnfreePredicate = _: true; # Workaround for unfree packages
-    };
-  };
 
   home = {
     username = "niko";
