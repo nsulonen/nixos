@@ -77,9 +77,39 @@
 
   environment.systemPackages = with pkgs; [
     git
+    gh
+    vscode
+    distrobox
     vim
     wget
   ];
+
+
+  #programs
+  programs = {
+
+    git = {
+      enable = true;
+      userName = "nsulonen";
+      userEmail = "niko.sulonen@proton.me";
+      extraConfig = {
+        init.defaultBranch = "main";
+      };
+    };
+
+    firefox = {
+      enable = true;
+    };
+
+    steam = {
+      enable = true;
+      gamescopeSession.enable = true;
+    };
+
+    gamemode = {
+      enable = true;
+    };
+  };
 
 
   #users
