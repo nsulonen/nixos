@@ -36,9 +36,6 @@
       enable = true;
       gamescopeSession.enable = true;
     };
-    gamemode = {
-      enable = true;
-    };
   };
 
   # Nicely reload system units when changing configs
