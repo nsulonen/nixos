@@ -87,7 +87,6 @@
 
   #programs
   programs = {
-
     git = {
       enable = true;
       config = {
@@ -96,19 +95,23 @@
         init.defaultBranch = "main";
       };
     };
+  };
 
-    firefox = {
+
+  #flatpaks
+  services.flatpak = {
+
+    update.auto = {
       enable = true;
+      onCalendar = "daily";
     };
 
-    steam = {
-      enable = true;
-      gamescopeSession.enable = true;
-    };
-
-    gamemode = {
-      enable = true;
-    };
+    packages = [
+    "com.valvesoftware.Steam"
+    "org.libreoffice.LibreOffice"
+    "org.mozilla.firefox"
+    "org.videolan.VLC"
+    ];
   };
 
 
