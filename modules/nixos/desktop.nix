@@ -2,7 +2,6 @@
 {
   services.xserver = {
     enable = true;
-    videoDrivers = [ "nvidia" ];
     xkb.layout = "fi";
     xkb.options = "eurosign:e,caps:escape";
   };
