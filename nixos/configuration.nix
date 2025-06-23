@@ -95,6 +95,13 @@
         init.defaultBranch = "main";
       };
     };
+
+    steam = {
+      enable = true;
+      gamescopeSession = true;
+    };
+
+    gamemode.enable = true;
   };
 
 
@@ -108,7 +115,6 @@
     };
 
     packages = [
-    "com.valvesoftware.Steam"
     "org.libreoffice.LibreOffice"
     "org.mozilla.firefox"
     "org.videolan.VLC"
