@@ -92,7 +92,7 @@
       enable = true;
       userName = "nsulonen";
       userEmail = "niko.sulonen@proton.me";
-      extraConfig = {
+      config = {
         init.defaultBranch = "main";
       };
     };
