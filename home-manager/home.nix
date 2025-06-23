@@ -27,7 +27,9 @@
       enable = true;
       userName = "nsulonen";
       userEmail = "niko.sulonen@proton.me";
-      init.defaultBranch = main;
+      extraConfig = {
+        init.defaultBranch = "main";
+      };
     };
     firefox = {
       enable = true;
