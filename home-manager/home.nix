@@ -18,7 +18,7 @@
   home.file = {
 
     # Configuration file for Niri
-    ".config/niri/config.kdl".source = ./dots/config.kdl;
+    ".config/niri/config.kdl".source = ./dots/niri/config.kdl;
   };
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
