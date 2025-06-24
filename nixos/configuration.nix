@@ -4,6 +4,7 @@
   imports =
     [
       ./hardware-configuration.nix
+      ./modules/niri.nix
     ];
 
   system.stateVersion = "25.05";
@@ -34,6 +35,8 @@
     xkb.options = "eurosign:e,caps:escape";
   };
 
+  
+  #kde
   services.desktopManager.plasma6.enable = true;
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
