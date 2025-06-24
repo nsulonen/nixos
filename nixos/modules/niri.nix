@@ -9,5 +9,6 @@
       waybar
       mako
       fuzzel
+      xwayland-satellite
     ];
 }
