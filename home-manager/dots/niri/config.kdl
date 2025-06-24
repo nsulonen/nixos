@@ -13,8 +13,7 @@ input {
             // For more information, see xkeyboard-config(7).
 
             // For example:
-            // layout "us,ru"
-            // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
+            layout "fi"
         }
 
         // Enable numlock on startup, omitting this setting disables it.
