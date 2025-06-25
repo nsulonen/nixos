@@ -68,7 +68,7 @@ input {
 output "DP-1" {
     // off
     mode "2560x1440@143.927"
-    scale 1
+    scale 1.15
     transform "normal"
     variable-refresh-rate on-demand=true
     focus-at-startup
