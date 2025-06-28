@@ -74,6 +74,7 @@
     distrobox
     vim
     wget
+    obsidian
   ];
 
 
