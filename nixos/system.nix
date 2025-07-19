@@ -127,6 +127,6 @@
   nix.settings = {
     trusted-users = ["root" "niko"];
     experimental-features = [ "nix-command" "flakes" ];
-  }
+  };
 }
 
