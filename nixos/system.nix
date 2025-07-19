@@ -76,6 +76,7 @@
     wget
     obsidian
     devenv
+    nautilus
   ];
 
 
