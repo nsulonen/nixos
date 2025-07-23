@@ -1,31 +1,33 @@
-// -*- mode: jsonc -*-
-{
-    "layer": "top", // Waybar at top layer
-    "position": "right", // Waybar position (top|bottom|left|right)
-    "spacing": 4, // Gaps between modules (4px)
+[
+    {
+        "layer": "top", // Waybar at top layer
+        "position": "bottom", // Waybar position (top|bottom|left|right)
+        "spacing": 4, // Gaps between modules (4px)
 
-    "modules-left": [
-        "wlr/taskbar"
-    ],
-    "modules-center": [
-        "niri/workspaces"
-    ],
-    "modules-right": [
-        "clock"
+        "modules-left": [
+            "wlr/taskbar"
+        ],
+        "modules-center": [
+            "niri/workspaces",
+            "wlr/taskbar"
+        ],
+        "modules-right": [
+            "clock"
 
-    ],
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
+        ],
+        "clock": {
+            // "timezone": "America/New_York",
+            "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+            "format-alt": "{:%Y-%m-%d}"
         }
     },
-    "clock": {
-        // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+    {
+        "layer": "bottom", // Waybar at top layer
+        "position": "right", // Waybar position (top|bottom|left|right)
+        "spacing": 4, // Gaps between modules (4px)
+
+        "modules-center": [
+            "niri/workspaces"
+        ]
     }
-}
+]
