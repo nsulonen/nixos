@@ -5,7 +5,7 @@
     "spacing": 4, // Gaps between modules (4px)
         
     "modules-left": [
-
+        "clock"
     ],
         
     "modules-center": [
@@ -13,11 +13,12 @@
     ],
 
     "modules-right": [
-        "clock"
+
     ],
 
     "clock": {
         // "timezone": "America/New_York",
+        "format": "{:%I\n<span overline=\"single\">%M</span>}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     }
