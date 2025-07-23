@@ -13,7 +13,7 @@
         //"custom/media"
     ],
     "modules-center": [
-        "niri/window"
+        "wlr/taskbar"
     ],
     "modules-right": [
         //"mpd",
