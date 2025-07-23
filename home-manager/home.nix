@@ -17,8 +17,12 @@
   # Manage configurations with Home Manager
   home.file = {
 
-    # Configuration file for Niri
+    # Niri
     ".config/niri/config.kdl".source = ./dots/niri/config.kdl;
+
+    # Waybar
+    ".config/waybar/config.jsonc".source = ./dots/waybar/config.jsonc;
+
   };
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
