@@ -21,7 +21,7 @@
     ".config/niri/config.kdl".source = ./dots/niri/config.kdl;
 
     # Waybar
-    ".config/waybar/config.jsonc".source = ./dots/waybar/config.jsonc;
+    ".config/waybar/config.jsonc".source = ./dots/waybar/config;
 
   };
   # Nicely reload system units when changing configs
