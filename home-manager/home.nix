@@ -22,6 +22,7 @@
 
     # Waybar
     ".config/waybar/config.jsonc".source = ./dots/waybar/config;
+    ".config/waybar/style.css".source = ./dots/waybar/style.css;
 
   };
   # Nicely reload system units when changing configs
