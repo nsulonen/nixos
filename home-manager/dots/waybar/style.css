@@ -63,7 +63,6 @@ button:hover {
 }
 
 #workspaces button.focused {
-    background-color: #64727D;
     box-shadow: inset 3px 0px #ffffff;
 }
 
