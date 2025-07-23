@@ -1,50 +1,24 @@
-
-    //{
-    //    "layer": "top", // Waybar at top layer
-    //    "position": "bottom", // Waybar position (top|bottom|left|right)
-    //    "height": 40,
-    //    "spacing": 4, // Gaps between modules (4px)
-    //
-    //    "modules-left": [
-    //    
-    //    ],
-    //    "modules-center": [
-    //        "wlr/taskbar"
-    //    ],
-    //    "modules-right": [
-    //        "clock"
-    //
-    //   ],
-    //    "clock": {
-    //        // "timezone": "America/New_York",
-    //        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    //        "format-alt": "{:%Y-%m-%d}"
-    //    },
-    //    "wlr/taskbar": {
-    //        "icon-size": 36
-    //    }
-    //},
-    {
-        "layer": "top", // Waybar at top layer
-        "position": "left", // Waybar position (top|bottom|left|right)
-        "width": 30,
-        "spacing": 4, // Gaps between modules (4px)
+{
+    "layer": "top", // Waybar at top layer
+    "position": "left", // Waybar position (top|bottom|left|right)
+    "width": 30,
+    "spacing": 4, // Gaps between modules (4px)
         
-        "modules-left": [
+    "modules-left": [
 
-        ],
+    ],
         
-        "modules-center": [
-            "niri/workspaces"
-        ],
+    "modules-center": [
+        "niri/workspaces"
+    ],
 
-        "modules-right": [
-            "clock"
-        ],
+    "modules-right": [
+        "clock"
+    ],
 
-        "clock": {
-            // "timezone": "America/New_York",
-            "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-            "format-alt": "{:%Y-%m-%d}"
-        }
+    "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
     }
+}
