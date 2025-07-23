@@ -25,7 +25,7 @@
         }
     },
     {
-        "layer": "bottom", // Waybar at top layer
+        "layer": "top", // Waybar at top layer
         "position": "left", // Waybar position (top|bottom|left|right)
         "spacing": 4, // Gaps between modules (4px)
         
