@@ -20,7 +20,7 @@
 	        "format": "{icon}",
 	        "format-icons": {
 		        "active": "f111",
-		        "default": "f10c"
+		        "default": ""
 	        }
         }
     },
