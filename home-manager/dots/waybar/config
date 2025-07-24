@@ -1,28 +1,44 @@
-{
-    "layer": "top", // Waybar at top layer
-    "position": "right", // Waybar position (top|bottom|left|right)
-    "margin-top": 4,
-    "margin-right": 4,
-    "margin-bottom": 4,
-    "width": 30,
-    "spacing": 4, // Gaps between modules (4px)
-        
-    "modules-left": [
-        "clock"
-    ],
-        
-    "modules-center": [
-        "niri/workspaces"
-    ],
+[    
+    {
+        "layer": "top", // Waybar at top layer
+        "position": "left", // Waybar position (top|bottom|left|right)
+        "spacing": 4, // Gaps between modules (4px)
+            
+        "modules-left": [
 
-    "modules-right": [
+        ],
+            
+        "modules-center": [
+            "niri/workspaces"
+        ],
 
-    ],
+        "modules-right": [
 
-    "clock": {
-        // "timezone": "America/New_York",
-        "format": "{:%I\n<span overline=\"single\">%M</span>}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        ]
+    },
+    {
+        "layer": "top", // Waybar at top layer
+        "position": "bottom", // Waybar position (top|bottom|left|right)
+        "spacing": 4, // Gaps between modules (4px)
+            
+        "modules-left": [
+
+        ],
+            
+        "modules-center": [
+            
+        ],
+
+        "modules-right": [
+            "clock"
+        ],
+
+        "clock": {
+            // "timezone": "America/New_York",
+            "format": "{:%I\n<span overline=\"single\">%M</span>}",
+            "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+            "format-alt": "{:%Y-%m-%d}"
+        }
     }
-}
+    
+]
