@@ -5,7 +5,7 @@
 }
 
 window#waybar {
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(15, 15, 15);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
