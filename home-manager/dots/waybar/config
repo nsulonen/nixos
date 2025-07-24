@@ -19,8 +19,8 @@
         "niri/workspaces": {
 	        "format": "{icon}",
 	        "format-icons": {
-		        "active": "",
-		        "default": ""
+		        "active": "f111",
+		        "default": "f10c"
 	        }
         }
     },
