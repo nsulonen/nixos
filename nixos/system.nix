@@ -78,6 +78,7 @@
     devenv
     nautilus
     font-awesome
+    swaybg
   ];
 
 
