@@ -39,13 +39,11 @@ button {
     /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
-    transition: all .2s ease-in-out;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    transform: scale(1.1);
 }
 
 /* you can set a style on hover for any module like this */
