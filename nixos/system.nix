@@ -77,6 +77,7 @@
     obsidian
     devenv
     nautilus
+    font-awesome
   ];
 
 
