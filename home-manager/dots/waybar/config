@@ -14,8 +14,15 @@
 
         "modules-right": [
 
-        ]
-        
+        ],
+
+        "niri/workspaces": {
+	        "format": "{icon}",
+	        "format-icons": {
+		        "active": "",
+		        "default": ""
+	        }
+        }
     },
     {
         "layer": "top", // Waybar at top layer
