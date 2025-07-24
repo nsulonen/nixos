@@ -30,14 +30,12 @@
         ],
 
         "modules-right": [
-            "simpleclock"
+            "clock"
         ],
 
         "clock": {
             // "timezone": "America/New_York",
-            "format": "{:%I\n<span overline=\"single\">%M</span>}",
-            "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-            "format-alt": "{:%Y-%m-%d}"
+            "format": "{:%b %d | %H:%M}"
         }
     }
     
