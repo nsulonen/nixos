@@ -30,7 +30,7 @@
         ],
 
         "modules-right": [
-            "clock"
+            "simpleclock"
         ],
 
         "clock": {
