@@ -5,7 +5,7 @@
         "spacing": 4, // Gaps between modules (4px)
             
         "modules-left": [
-
+            "clock"
         ],
             
         "modules-center": [
@@ -15,6 +15,11 @@
         "modules-right": [
 
         ],
+
+        "clock": {
+            // "timezone": "America/New_York",
+            "format": "{:%H/n%M}"
+        },
 
         "niri/workspaces": {
 	        "format": "{icon}",
@@ -28,6 +33,7 @@
         "layer": "top", // Waybar at top layer
         "position": "top", // Waybar position (top|bottom|left|right)
         "spacing": 4, // Gaps between modules (4px)
+        "mode": "hide",
             
         "modules-left": [
 
