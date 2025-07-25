@@ -18,7 +18,7 @@
 
         "clock": {
             // "timezone": "America/New_York",
-            "format": "{:%H/n%M}"
+            "format": "{:%H\n<span overline=\"single\">%M</span>}"
         },
 
         "niri/workspaces": {
