@@ -43,7 +43,7 @@
 
         "clock": {
             // "timezone": "America/New_York",
-            "format": "{:%b %d | %H:%M}"
+            "format": "{:%b %d    %H:%M}"
         }
     }
     
