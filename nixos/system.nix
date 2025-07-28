@@ -74,8 +74,13 @@
     obsidian
     devenv
     nautilus
-    font-awesome
     swaybg
+  ];
+
+
+  #fonts packages
+  fonts.packages = with pkgs; [
+    font-awesome
   ];
 
 
