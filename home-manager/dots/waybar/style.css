@@ -7,16 +7,11 @@
 window#waybar {
     background-color: rgb(10, 10, 10);
     color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
+    border-radius: 8;
 }
 
 window#waybar.hidden {
     opacity: 0.2;
-}
-
-#window {
-    border-radius: 8px;
 }
 
 /*
