@@ -34,11 +34,10 @@
     enable = true;
     xkb.layout = "fi";
     xkb.options = "eurosign:e,caps:escape";
-  };
 
-  
-  #gdm
-  services.displayManager.gdm.enable = true;
+    #login manager
+    displayManager.gdm.enable = true;
+  };
 
 
   #graphics
