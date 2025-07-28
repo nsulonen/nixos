@@ -21,8 +21,7 @@
         "clock": {
             // "timezone": "America/New_York",
             "format": "{:%H\n%M}",
-            "tooltip": "false",
-            "expand": "true"
+            "tooltip": "false"
         },
 
         "niri/workspaces": {
