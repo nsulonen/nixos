@@ -87,7 +87,7 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #mpd {
-    padding: 0px;
+    padding: 0 0.5rem 0 0;
     color: #ffffff;
 }
 
