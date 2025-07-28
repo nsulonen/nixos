@@ -4,12 +4,15 @@
     font-size: 18px;
 }
 
+waybar {
+    border-radius: 4px;
+}
+
 window#waybar {
     background-color: rgb(10, 10, 10);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
-    border-radius: 4px;
 }
 
 window#waybar.hidden {
