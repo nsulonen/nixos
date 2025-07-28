@@ -9,6 +9,8 @@ window#waybar {
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
+    margin: 8px 0px 8px 8px;
+    border-radius: 4px;
 }
 
 window#waybar.hidden {
