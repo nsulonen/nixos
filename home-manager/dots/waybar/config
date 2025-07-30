@@ -1,24 +1,24 @@
 [    
     {
         "layer": "top", // Waybar at top layer
-        "position": "left", // Waybar position (top|bottom|left|right)
+        "position": "right", // Waybar position (top|bottom|left|right)
         "spacing": 4, // Gaps between modules (4px)
         // "margin-top": 8,
         // "margin-bottom": 8,
         // "margin-left": 8,
             
         "modules-left": [
-            "clock"
+            "niri/workspaces"
             //"network"
             //"pulseaudio"
         ],
             
         "modules-center": [
-            "niri/workspaces"
+            
         ],
 
         "modules-right": [
-
+            "clock"
         ],
 
         "clock": {
