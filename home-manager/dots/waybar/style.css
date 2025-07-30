@@ -5,6 +5,7 @@
 }
 
 window#waybar {
+    padding: 1rem 1rem;
     background-color: #101319;
     border-right: 1px solid #CCD2DC;
     color: #ffffff;
@@ -86,7 +87,6 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #mpd {
-    padding: 0.5rem 1rem;
     color: #ffffff;
 }
 
