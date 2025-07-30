@@ -118,6 +118,7 @@
     packages = [
     "org.libreoffice.LibreOffice"
     "org.mozilla.firefox"
+    "app.zen_browser.zen"
     "org.videolan.VLC"
     ];
   };
