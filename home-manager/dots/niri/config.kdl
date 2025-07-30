@@ -83,7 +83,7 @@ output "DP-3" {
     // off
     mode "1920x1080@143.850"
     scale 1
-    transform "flipped-90"
+    transform "270"
     // variable-refresh-rate on-demand=true
     // focus-at-startup
     position x=0 y=0
