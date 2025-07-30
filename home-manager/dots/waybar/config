@@ -28,7 +28,6 @@
         },
 
         "niri/workspaces": {
-            "margin-top": 8,
 	        "format": "{icon}",
 	        "format-icons": {
 		        "active": "",
