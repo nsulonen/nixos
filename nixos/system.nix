@@ -75,6 +75,8 @@
     devenv
     nautilus
     swaybg
+    xsettingsd
+    xorg.xrdb
   ];
 
 
