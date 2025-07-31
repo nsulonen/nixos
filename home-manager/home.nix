@@ -28,6 +28,11 @@
   };
 
   # Themes
+  home.sessionVariables = {
+    XCURSOR_THEME = "Catppuccin-Mocha-Light-Cursors";
+    XCURSOR_SIZE = "24";
+  };
+  
   home.pointerCursor = {
     gtk.enable = true;
     name = "Catppuccin-Mocha-Light-Cursors";
