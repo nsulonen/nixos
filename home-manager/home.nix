@@ -13,6 +13,7 @@
 
   home.packages = with pkgs; [
     catppuccin-cursors
+    papirus-icon-theme
   ];
 
   # Manage configurations with Home Manager
@@ -28,16 +29,24 @@
   };
 
   # Themes
-  #home.sessionVariables = {
-  #  XCURSOR_THEME = "catppuccin-mocha-light-cursors";
-  #  XCURSOR_SIZE = "24";
-  #};
+  gtk = {
+    enable = true;
+    iconTheme = {
+      name = "Papirus-Dark";
+      package = pkgs.papirus-icon-theme
+      };
+    };
+    cursorTheme = {
+      name = "catppuccin-mocha-light-cursors";
+      package = pkgs.catppuccin-cursors.mochaLight;
+    };
+  };
 
   home.pointerCursor = {
     gtk.enable = true;
     name = "catppuccin-mocha-light-cursors";
     package = pkgs.catppuccin-cursors.mochaLight;
-    size = 24;
+    size = 30;
   }; 
   
   # Reload system units when changing configs
