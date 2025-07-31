@@ -30,7 +30,7 @@
   };
 
   # Themes
-  catpuccin = {
+  catppuccin = {
     enable = true;
     flavor = "mocha";
   };
