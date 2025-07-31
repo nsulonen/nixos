@@ -259,7 +259,7 @@ environment {
 }
 
 // Set wallpaper
-// spawn-at-startup "swaybg" "-o" "*" "-i" "/home/niko/System/home-manager/dots/niri/wall/wall9.jpg" "-m" "fill"
+spawn-at-startup "swaybg" "-o" "*" "-i" "/home/niko/System/home-manager/dots/niri/wall/wall9.jpg" "-m" "fill"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.

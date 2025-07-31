@@ -135,12 +135,5 @@
     trusted-users = ["root" "niko"];
     experimental-features = [ "nix-command" "flakes" ];
   };
-
-  
-  #stylix
-  stylix = {
-    enable = true;
-    image = ./wallpaper.jpg;
-  };
 }
 
