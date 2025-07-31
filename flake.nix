@@ -7,6 +7,8 @@
 
         nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
 
+        catppuccin.url = "github:catppuccin/nix";
+
         home-manager = {
             url = "github:nix-community/home-manager/release-25.05";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -18,7 +20,7 @@
 
         nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
             system = "x86_64-linux";
-            specialArgs = {inherit inputs;};
+            specialArgs = { inherit inputs; };
             modules = [
                 ./nixos/system.nix
                 nix-flatpak.nixosModules.nix-flatpak
