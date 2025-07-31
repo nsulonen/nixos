@@ -3,11 +3,9 @@
     
     inputs = {
 
-        nixpkgs.url = "nixpkgs/nixos-unstable";
+        nixpkgs.url = "nixpkgs/nixos-25.05";
 
         nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
-
-        catppuccin.url = "github:catppuccin/nix";
 
         home-manager = {
             url = "github:nix-community/home-manager/release-25.05";
@@ -16,7 +14,7 @@
         
     };
 
-    outputs = { nixpkgs, nix-flatpak, home-manager, catppuccin, ... }@inputs: {
+    outputs = { nixpkgs, nix-flatpak, home-manager, ... }@inputs: {
 
         nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
             system = "x86_64-linux";
@@ -24,20 +22,12 @@
             modules = [
                 ./nixos/system.nix
                 nix-flatpak.nixosModules.nix-flatpak
-                home-manager.nixosModules.home-manager {
-                    home-manager.users.niko = {
-                        imports = [
-                            ./home-manager/home.nix
-                            catppuccin.homeModules.catppuccin
-                        ];
-                    };
-                }
             ];
         };
 
-        #homeConfigurations.niko = home-manager.lib.homeManagerConfiguration {
-        #    pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        #    modules = [ ./home-manager/home.nix ];
-        #};
+        homeConfigurations.niko = home-manager.lib.homeManagerConfiguration {
+            pkgs = nixpkgs.legacyPackages.x86_64-linux;
+            modules = [ ./home-manager/home.nix ];
+        };
     };          
 }
