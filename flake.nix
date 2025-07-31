@@ -24,19 +24,7 @@
             modules = [
                 ./nixos/system.nix
                 nix-flatpak.nixosModules.nix-flatpak
-
-                home-manager.nixosModules.home-manager {
-                    home-manager = {
-                        #backupFileExtension = "backup";
-
-                        users.niko = {
-                            imports = [
-                                ../home-manager/home.nix
-                                catppuccin.homeManagerModules.catppuccin
-                            ];
-                        };
-                    };
-                }
+                home-manager.nixosModules.home-manager
             ];
         };
     };          

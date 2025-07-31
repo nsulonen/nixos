@@ -6,22 +6,22 @@
       ./hardware.nix
       ./modules/niri.nix
       ./modules/nvidia.nix
-      # inputs.home-manager.nixosModules.home-manager
+      inputs.home-manager.nixosModules.home-manager
     ];
 
   system.stateVersion = "25.05";
 
 
   #home-manager
-  #home-manager = {
-  #  extraSpecialArgs = { inherit inputs; };
-  #  backupFileExtension = "backup";
-  #  users.niko = {
-  #    imports = [
-  #        ../home-manager/home.nix
-  #    ];
-  #  };
-  #};
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    backupFileExtension = "backup";
+    users.niko = {
+      imports = [
+          ../home-manager/home.nix
+      ];
+    };
+  };
 
 
   #bootloader
