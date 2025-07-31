@@ -36,7 +36,7 @@
     xkb.options = "eurosign:e,caps:escape";
 
     #login manager
-    displayManager.gdm.enable = true;
+    displayManager.sddm.enable = true;
   };
 
 
