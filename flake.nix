@@ -24,7 +24,7 @@
             modules = [
                 ./nixos/system.nix
                 nix-flatpak.nixosModules.nix-flatpak
-                catppuccin.nixosModules.catppuccin
+                catppuccin.homeManagerModules.catppuccin
                 home-manager.nixosModules.home-manager
             ];
         };
