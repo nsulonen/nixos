@@ -138,6 +138,9 @@
 
   
   #stylix
-  stylix.image = ./wallpaper.jpg;
+  stylix = {
+    enable = true;
+    image = ./wallpaper.jpg;
+  };
 }
 
