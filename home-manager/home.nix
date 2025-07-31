@@ -6,6 +6,9 @@
   ...
 }: {
   
+  # Enable automatic backup
+  home-manager.backupFileExtension = "backup";
+
   home = {
     username = "niko";
     homeDirectory = "/home/niko";
@@ -14,9 +17,6 @@
   home.packages = with pkgs; [
     catppuccin-cursors
   ];
-
-  # Enable automatic backup
-  home-manager.backupFileExtension = "backup";
 
   # Manage configurations with Home Manager
   home.file = {
