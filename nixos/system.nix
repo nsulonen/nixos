@@ -40,6 +40,11 @@
   };
 
 
+  # xdg desktop portal
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+
+
   #graphics
   hardware.graphics = {
         enable = true;
