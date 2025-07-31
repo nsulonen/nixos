@@ -28,14 +28,6 @@
   };
 
   # Themes
-  gtk = {
-    enable = true;
-    cursorTheme = {
-      package = pkgs.catppuccin-cursors.mochaLight;
-      name = "Catppuccin-Mocha-Light-Cursors";
-    };
-  };
-
   home.pointerCursor = {
     gtk.enable = true;
     name = "Catppuccin-Mocha-Light-Cursors";
