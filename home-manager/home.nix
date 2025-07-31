@@ -9,6 +9,7 @@
   home = {
     username = "niko";
     homeDirectory = "/home/niko";
+    stateVersion = "25.05";
   };
 
   home.packages = with pkgs; [
@@ -29,18 +30,17 @@
   };
 
   # Themes
+  catpuccin = {
+    enable = true;
+    flavor = "mocha";
+  };
+
   gtk = {
     enable = true;
-    
     iconTheme = {
       name = "Papirus-Dark";
       package = pkgs.papirus-icon-theme;
       };
-
-    cursorTheme = {
-      name = "catppuccin-mocha-light-cursors";
-      package = pkgs.catppuccin-cursors.mochaLight;
-    };
   };
 
   home.pointerCursor = {
@@ -52,11 +52,5 @@
   
   # Reload system units when changing configs
   systemd.user.startServices = "sd-switch";
-
-  # State version for compatibility
-  home.stateVersion = "25.05";
-
-  # Enable Home Manager features
-  programs.home-manager.enable = true;
 
 }
