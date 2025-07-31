@@ -85,7 +85,8 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
-#mpd {
+#mpd,
+#workspaces {
     padding: 1rem 1rem;
     color: #ffffff;
 }
