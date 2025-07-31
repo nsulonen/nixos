@@ -29,14 +29,6 @@
     ".config/waybar/style.css".source = ./dots/waybar/style.css;
 
   };
-
-  # Theme
-  home.pointerCursor = {
-    gtk.enable = true;
-    name = "Catppuccin-Mocha-Light-Cursors";
-    package = pkgs.catppuccin-cursors.mochaLight;
-    size = 16;
-  };
   
   # Reload system units when changing configs
   systemd.user.startServices = "sd-switch";
