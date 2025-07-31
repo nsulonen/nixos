@@ -26,6 +26,12 @@
 
   };
 
+  # Set Catppuccin theme
+  catppuccin = {
+    enable = true;
+    flavor = mocha;
+  };
+
   # Set cursor theme
   home.pointerCursor = {
     gtk.enable = true;
