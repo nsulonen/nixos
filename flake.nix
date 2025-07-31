@@ -7,6 +7,8 @@
 
         nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
 
+        catppuccin.url = "github:catppuccin/nix";
+
         home-manager = {
             url = "github:nix-community/home-manager/release-25.05";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -14,7 +16,7 @@
         
     };
 
-    outputs = { nixpkgs, nix-flatpak, home-manager, ... }@inputs: {
+    outputs = { nixpkgs, nix-flatpak, home-manager, catppuccin, ... }@inputs: {
 
         nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
             system = "x86_64-linux";
@@ -26,6 +28,7 @@
                     home-manager.users.niko = {
                         imports = [
                             ./home-manager/home.nix
+                            catppuccin.homeModules.catppuccin
                         ];
                     };
                 }
