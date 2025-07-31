@@ -137,7 +137,7 @@
   };
 
   #theme
-  gtk = {
+  services.xserver.displayManager.lightdm.greeters.gtk = {
     enable = true;
     theme = {
       name = "Breeze-Dark";
