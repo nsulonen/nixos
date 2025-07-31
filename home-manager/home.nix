@@ -15,7 +15,6 @@
     catppuccin-cursors
   ];
 
-
   # Enable Home Manager features
   programs.home-manager.enable = true;
 
