@@ -53,5 +53,5 @@
   home.stateVersion = "25.05";
 
   # Enable Home Manager features
-  programs.home-manager.enable = true;
+  # programs.home-manager.enable = true;
 }
