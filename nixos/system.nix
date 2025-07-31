@@ -36,26 +36,9 @@
     xkb.options = "eurosign:e,caps:escape";
 
     #login manager
-    displayManager.lightdm = {
-      enable = true;
-
-      greeters.gtk = {
-
-        iconTheme = {
-          name = "Papirus-Dark";
-          package = pkgs.catppuccin-papirus-folders.override {
-            flavor = "mocha";
-            accent = "lavender";
-          };
-        };
-
-        cursorTheme = {
-          name = "Catppuccin-Mocha-Light-Cursors";
-          package = pkgs.catppuccin-cursors.mochaLight;
-        };
-      };
-    };
+    displayManager.gdm.enable = true;
   };
+
 
   #graphics
   hardware.graphics = {
