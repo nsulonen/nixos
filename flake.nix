@@ -22,14 +22,7 @@
             modules = [
                 ./nixos/system.nix
                 nix-flatpak.nixosModules.nix-flatpak
-                home-manager.nixosModules.home-manager {
-
-                    home-manager.users.niko = {
-                        imports = [
-                            ./home-manager/home.nix
-                        ];
-                    };
-                }
+                home-manager.nixosModules.home-manager
             ];
         };
     };          

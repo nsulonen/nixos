@@ -15,6 +15,7 @@
   #home-manager
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
+    programs.home-manager.enable = true;
     backupFileExtension = "backup";
     users = {
       niko = import ../home-manager/home.nix;
