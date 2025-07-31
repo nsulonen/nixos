@@ -29,13 +29,13 @@
 
   # Themes
   home.sessionVariables = {
-    XCURSOR_THEME = "Catppuccin-Mocha-Light-Cursors";
+    XCURSOR_THEME = "catppuccin-mocha-light-cursors";
     XCURSOR_SIZE = "24";
   };
 
   home.pointerCursor = {
     gtk.enable = true;
-    name = "Catppuccin-Mocha-Light-Cursors";
+    name = "catppuccin-mocha-light-cursors";
     package = pkgs.catppuccin-cursors.mochaLight;
     size = 24;
   }; 
