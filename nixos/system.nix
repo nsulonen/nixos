@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ inputs, config, lib, pkgs, ... }:
 
 {
   imports =
@@ -6,9 +6,20 @@
       ./hardware.nix
       ./modules/niri.nix
       ./modules/nvidia.nix
+      inputs.home-manager.nixosModules.home-manager
     ];
 
   system.stateVersion = "25.05";
+
+
+  #home-manager
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    users = {
+      niko = import ../home-manager/home.nix;
+    };
+  };
+
 
   #bootloader
   boot.loader.systemd-boot.enable = true;
