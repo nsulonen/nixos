@@ -29,7 +29,7 @@
   # Set Catppuccin theme
   catppuccin = {
     enable = true;
-    flavor = mocha;
+    flavor = "mocha";
   };
 
   # Set cursor theme
