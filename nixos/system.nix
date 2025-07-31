@@ -154,9 +154,9 @@
       name = "Catppuccin-Mocha-Light-Cursors";
       package = pkgs.catppuccin-cursors.mochaLight;
     };
-    gtk3 = {
-      extraConfig.gtk-application-prefer-dark-theme = true;
-    };
+    #gtk3 = {
+    #  extraConfig.gtk-application-prefer-dark-theme = true;
+    #};
   };
 }
 
