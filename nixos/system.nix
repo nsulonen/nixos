@@ -36,9 +36,26 @@
     xkb.options = "eurosign:e,caps:escape";
 
     #login manager
-    displayManager.gdm.enable = true;
-  };
+    displayManager.lightdm = {
+      enable = true;
 
+      greeters.gtk = {
+
+        iconTheme = {
+          name = "Papirus-Dark";
+          package = pkgs.catppuccin-papirus-folders.override {
+            flavor = "mocha";
+            accent = "lavender";
+          };
+        };
+
+        cursorTheme = {
+          name = "Catppuccin-Mocha-Light-Cursors";
+          package = pkgs.catppuccin-cursors.mochaLight;
+        };
+      };
+    };
+  };
 
   #graphics
   hardware.graphics = {
@@ -134,29 +151,6 @@
   nix.settings = {
     trusted-users = ["root" "niko"];
     experimental-features = [ "nix-command" "flakes" ];
-  };
-
-  #theme
-  services.xserver.displayManager.lightdm.greeters.gtk = {
-    enable = true;
-    theme = {
-      name = "Breeze-Dark";
-      package = pkgs.libsForQt5.breeze-gtk;
-    };
-    iconTheme = {
-      name = "Papirus-Dark";
-      package = pkgs.catppuccin-papirus-folders.override {
-        flavor = "mocha";
-        accent = "lavender";
-      };
-    };
-    cursorTheme = {
-      name = "Catppuccin-Mocha-Light-Cursors";
-      package = pkgs.catppuccin-cursors.mochaLight;
-    };
-    #gtk3 = {
-    #  extraConfig.gtk-application-prefer-dark-theme = true;
-    #};
   };
 }
 
