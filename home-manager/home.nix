@@ -18,6 +18,9 @@
   # Enable Home Manager features
   programs.home-manager.enable = true;
 
+  # Enable automatic backup
+  home-manager.backupFileExtension = "backup";
+
   # Manage configurations with Home Manager
   home.file = {
 
