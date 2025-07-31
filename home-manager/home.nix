@@ -30,15 +30,20 @@
   # Themes
   home.sessionVariables = {
     XCURSOR_THEME = "Catppuccin-Mocha-Light-Cursors";
-    XCURSOR_SIZE = "24";
+    XCURSOR_SIZE = "36";
   };
   
-  home.pointerCursor = {
-    gtk.enable = true;
+  gtk.cursorTheme = {
     name = "Catppuccin-Mocha-Light-Cursors";
     package = pkgs.catppuccin-cursors.mochaLight;
-    size = 24;
-  }; 
+  };
+
+  #home.pointerCursor = {
+  #  gtk.enable = true;
+  #  name = "Catppuccin-Mocha-Light-Cursors";
+  #  package = pkgs.catppuccin-cursors.mochaLight;
+  #  size = 24;
+  #}; 
   
   # Reload system units when changing configs
   systemd.user.startServices = "sd-switch";
