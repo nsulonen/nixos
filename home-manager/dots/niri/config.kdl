@@ -7,7 +7,7 @@ hotkey-overlay {
     skip-at-startup
 }
 
-cursor {
+/-cursor {
     xcursor-theme "Catppuccin-Mocha-Light-Cursors"
     xcursor-size 16
 }
