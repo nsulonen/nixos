@@ -36,7 +36,6 @@
     cursorTheme = {
       package = pkgs.catppuccin-cursors.mochaLight;
       name = "Catppuccin-Mocha-Light-Cursors";
-      size = 24;
     };
   };
 
