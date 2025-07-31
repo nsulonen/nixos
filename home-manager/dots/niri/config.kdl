@@ -8,8 +8,8 @@ hotkey-overlay {
 }
 
 cursor {
-    xcursor-theme = "Catppuccin-Mocha-Light-Cursors"
-    xcursor-size = 16
+    xcursor-theme "Catppuccin-Mocha-Light-Cursors"
+    xcursor-size 16
 }
 
 // Input device configuration.
