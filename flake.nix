@@ -16,7 +16,7 @@
         
     };
 
-    outputs = { nixpkgs, nix-flatpak, home-manager, ... }@inputs: {
+    outputs = { nixpkgs, nix-flatpak, catppuccin, home-manager, ... }@inputs: {
 
         nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
             system = "x86_64-linux";
@@ -24,7 +24,6 @@
             modules = [
                 ./nixos/system.nix
                 nix-flatpak.nixosModules.nix-flatpak
-                catppuccin.homeManagerModules.catppuccin
                 home-manager.nixosModules.home-manager
             ];
         };
