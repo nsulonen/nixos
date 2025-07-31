@@ -28,10 +28,10 @@
   };
 
   # Themes
-  home.sessionVariables = {
-    XCURSOR_THEME = "catppuccin-mocha-light-cursors";
-    XCURSOR_SIZE = "24";
-  };
+  #home.sessionVariables = {
+  #  XCURSOR_THEME = "catppuccin-mocha-light-cursors";
+  #  XCURSOR_SIZE = "24";
+  #};
 
   home.pointerCursor = {
     gtk.enable = true;
