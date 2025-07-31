@@ -31,11 +31,12 @@
   # Themes
   gtk = {
     enable = true;
+    
     iconTheme = {
       name = "Papirus-Dark";
-      package = pkgs.papirus-icon-theme
+      package = pkgs.papirus-icon-theme;
       };
-    };
+
     cursorTheme = {
       name = "catppuccin-mocha-light-cursors";
       package = pkgs.catppuccin-cursors.mochaLight;
