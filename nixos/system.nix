@@ -77,7 +77,7 @@
     swaybg
     xsettingsd
     xorg.xrdb
-    catppuccin-cursor
+    catppuccin-cursors
   ];
 
 
