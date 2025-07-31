@@ -22,12 +22,19 @@
             modules = [
                 ./nixos/system.nix
                 nix-flatpak.nixosModules.nix-flatpak
+                home-manager.nixosModules.home-manager {
+                    home-manager.users.niko = {
+                        imports = [
+                            ./home-manager/home.nix
+                        ];
+                    };
+                }
             ];
         };
 
-        homeConfigurations.niko = home-manager.lib.homeManagerConfiguration {
-            pkgs = nixpkgs.legacyPackages.x86_64-linux;
-            modules = [ ./home-manager/home.nix ];
-        };
+        #homeConfigurations.niko = home-manager.lib.homeManagerConfiguration {
+        #    pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        #    modules = [ ./home-manager/home.nix ];
+        #};
     };          
 }
