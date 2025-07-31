@@ -11,6 +11,11 @@
     homeDirectory = "/home/niko";
   };
 
+  home.packages = with pkgs; [
+    catppuccin-cursors
+  ];
+
+
   # Enable Home Manager features
   programs.home-manager.enable = true;
 
@@ -24,6 +29,14 @@
     ".config/waybar/config.jsonc".source = ./dots/waybar/config;
     ".config/waybar/style.css".source = ./dots/waybar/style.css;
 
+  };
+
+  # Theme
+  home.pointerCursor = {
+    gtk.enable = true;
+    name = "Catppuccin-Mocha-Light-Cursors";
+    package = pkgs.catppuccin-cursors.mochaLight;
+    size = 16;
   };
   
   # Reload system units when changing configs
