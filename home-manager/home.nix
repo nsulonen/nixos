@@ -1,7 +1,6 @@
-{ lib, config, pkgs, ... }: 
+{ config, lib, pkgs, ... }: 
 
 {
-
   home = {
     username = "niko";
     homeDirectory = "/home/niko";
@@ -13,19 +12,28 @@
     papirus-icon-theme
   ];
 
-  # Manage configurations with Home Manager
-  home.file = {
-
-    # Niri
-    ".config/niri/config.kdl".source = ./dots/niri/config.kdl;
-
-    # Waybar
-    ".config/waybar/config.jsonc".source = ./dots/waybar/config;
-    ".config/waybar/style.css".source = ./dots/waybar/style.css;
-
+  #programs
+  programs = {
+    git = {
+      enable = true;
+      config = {
+        user.name = "nsulonen";
+        user.email = "niko.sulonen@proton.me";
+        init.defaultBranch = "main";
+      };
+    };
   };
 
-  # Themes
+  #configurations
+  home.file = {
+    #niri
+    ".config/niri/config.kdl".source = ./dots/niri/config.kdl;
+    #waybar
+    ".config/waybar/config.jsonc".source = ./dots/waybar/config;
+    ".config/waybar/style.css".source = ./dots/waybar/style.css;
+  };
+
+  #themes
   gtk = {
     enable = true;
     iconTheme = {
@@ -41,7 +49,7 @@
     size = 30;
   }; 
   
-  # Reload system units when changing configs
-  systemd.user.startServices = "sd-switch";
+  
 
+  systemd.user.startServices = "sd-switch";
 }

@@ -6,6 +6,7 @@
     environment.systemPackages = with pkgs; [
       alacritty
       swaylock
+      swaybg
       waybar
       mako
       fuzzel
