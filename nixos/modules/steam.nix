@@ -9,4 +9,5 @@
     };
 
 		gamemode.enable = true;
+	};
 }
