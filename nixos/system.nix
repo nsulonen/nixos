@@ -84,11 +84,14 @@
 
     libvirtd = {
       enable = true;
-      qemu.runAsRoot = false;
-      qemu.swtpm.enable = true;
-      # These are needed for VirGL
-      qemu.package = pkgs.qemu_kvm;
-      qemu.ovmf.enable = true;
+
+      qemu = {
+        enable = true;
+        runAsRoot = false;
+        swtpm.enable = true;
+        ovmf.enable = true;
+      };
+          
     };
   };
 
