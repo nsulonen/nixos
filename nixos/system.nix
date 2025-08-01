@@ -160,7 +160,7 @@
 
     users.niko = {
       isNormalUser = true;
-      extraGroups = [ "wheel" "libvirtd" ];
+      extraGroups = [ "wheel" "libvirtd" "video" ];
     };
 
   };
