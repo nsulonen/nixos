@@ -155,11 +155,5 @@
     trusted-users = ["root" "niko"];
     experimental-features = [ "nix-command" "flakes" ];
   };
-
-  #catppuccin theme
-  catppuccin = {
-    enable = true;
-    flavor = "mocha";
-  };
 }
 
