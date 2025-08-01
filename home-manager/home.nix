@@ -13,16 +13,15 @@
   ];
 
   #programs
-  programs = {
-    git = {
-      enable = true;
-      config = {
-        user.name = "nsulonen";
-        user.email = "niko.sulonen@proton.me";
-        init.defaultBranch = "main";
-      };
+  programs.git = {
+    enable = true;
+    user.name = "nsulonen";
+    user.email = "niko.sulonen@proton.me";
+    extraConfig = {
+      init.defaultBranch = "main";
     };
   };
+  
 
   #configurations
   home.file = {
