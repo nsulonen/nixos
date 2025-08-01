@@ -16,11 +16,11 @@
 
     outputs = { nixpkgs, nix-flatpak, home-manager, ... }@inputs: {
 
-        nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+        nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
             system = "x86_64-linux";
             specialArgs = { inherit inputs; };
             modules = [
-                ./nixos/system.nix
+                ./nixos/desktop
                 nix-flatpak.nixosModules.nix-flatpak
 
                 home-manager.nixosModules.home-manager {
