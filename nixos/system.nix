@@ -3,7 +3,7 @@
 {
   imports =
     [
-      /etc/nixos/hardware-configuration.nix
+      ./hardware.nix
       ./modules/niri.nix
       ./modules/nvidia.nix
     ];
