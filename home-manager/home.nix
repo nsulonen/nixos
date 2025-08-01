@@ -15,8 +15,8 @@
   #programs
   programs.git = {
     enable = true;
-    user.name = "nsulonen";
-    user.email = "niko.sulonen@proton.me";
+    userName = "nsulonen";
+    userEmail = "niko.sulonen@proton.me";
     extraConfig = {
       init.defaultBranch = "main";
     };
