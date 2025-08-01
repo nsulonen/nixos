@@ -74,10 +74,22 @@
   };
 
 
-  #virtualization
-  virtualisation.podman = {
+  #virtualisation
+  virtualisation = {
+
+    podman = {
     enable = true;
     dockerCompat = true;
+    };
+
+    libvirtd = {
+      enable = true;
+      qemu.runAsRoot = false;
+      qemu.swtpm.enable = true;
+      # These are needed for VirGL
+      qemu.package = pkgs.qemu_kvm;
+      qemu.ovmf.enable = true;
+    };
   };
 
 
@@ -97,6 +109,7 @@
     swaybg
     xsettingsd
     xorg.xrdb
+    virt-manager
   ];
 
 
@@ -144,9 +157,13 @@
 
 
   #users
-  users.users.niko = {
-    isNormalUser = true;
-    extraGroups = [ "wheel" ];
+  users = {
+
+    users.niko = {
+      isNormalUser = true;
+      extraGroups = [ "wheel" "libvirtd" ];
+    };
+
   };
 
 
