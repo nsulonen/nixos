@@ -1,4 +1,4 @@
-{ inputs, config, lib, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   imports =
@@ -6,7 +6,6 @@
       ./hardware.nix
       ./modules/niri.nix
       ./modules/nvidia.nix
-      inputs.home-manager.nixosModules.home-manager
     ];
 
   system.stateVersion = "25.05";
@@ -19,7 +18,6 @@
     users.niko = {
       imports = [
           ../home-manager/home.nix
-          inputs.catppuccin.homeModules.catppuccin
       ];
     };
   };
@@ -82,13 +80,6 @@
     dockerCompat = true;
     };
 
-    libvirtd = {
-      enable = true;
-      qemu.runAsRoot = false;
-      qemu.swtpm.enable = true;
-      qemu.package = pkgs.qemu_kvm;
-      qemu.ovmf.enable = true;
-    };
   };
 
 
@@ -108,7 +99,6 @@
     swaybg
     xsettingsd
     xorg.xrdb
-    virt-manager
   ];
 
 
@@ -160,7 +150,7 @@
 
     users.niko = {
       isNormalUser = true;
-      extraGroups = [ "wheel" "libvirtd" "video" ];
+      extraGroups = [ "wheel" ];
     };
 
   };
