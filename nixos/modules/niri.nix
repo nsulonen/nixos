@@ -1,7 +1,7 @@
-{ config, lib, pkgs, ... }:
+{ inputs, config, lib, pkgs, ... }:
 
 {
-    imports = [ niri.nixosModules.niri ];
+    imports = [ inputs.niri.nixosModules.niri ];
 
     programs.niri.enable = true;
 }
