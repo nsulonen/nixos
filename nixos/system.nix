@@ -73,40 +73,38 @@
 	#packages
   environment.systemPackages = with pkgs; [
     git
-    gh
-    vscode
-    distrobox
+    # gh
+    # vscode
+    # distrobox
     vim
     wget
-    obsidian
-    devenv
-    nautilus
-    # xsettingsd
-    # xorg.xrdb
+    # obsidian
+    # devenv
+    # nautilus
   ];
 
 
   #fonts packages
-  fonts.packages = with pkgs; [
-    font-awesome
-  ];
+  #fonts.packages = with pkgs; [
+  #  font-awesome
+  #];
 
 
   #flatpaks
-  services.flatpak = {
-    enable = true;
-
-    update.auto = {
-      enable = true;
-      onCalendar = "daily";
-    };
-
-    packages = [
-    "org.libreoffice.LibreOffice"
-    "app.zen_browser.zen"
-    "org.videolan.VLC"
-    ];
-  };
+  #services.flatpak = {
+  #  enable = true;
+  #
+  #  update.auto = {
+  #    enable = true;
+  #    onCalendar = "daily";
+  #  };
+  #
+  #  packages = [
+  #  "org.libreoffice.LibreOffice"
+  #  "app.zen_browser.zen"
+  #  "org.videolan.VLC"
+  #  ];
+  #};
 	
 
 

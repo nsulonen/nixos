@@ -2,7 +2,9 @@
 
 {
   imports = [
-    ./git.nix
     ./homepkgs.nix
+    ./git.nix
+    ./gh.nix
+    ./distrobox.nix
   ];
 }
