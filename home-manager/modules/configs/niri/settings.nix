@@ -82,7 +82,7 @@
 		spawn-at-startup = [
 			{ command = ["waybar"]; }
 			{ command = ["xwayland-satellite"]; }
-			{ command = ["swaybg" "-o" "*" "-i" "/home/niko/System/home-manager/walls/wall9.jpg" "-m" "fill"]; }
+			{ command = ["swaybg" "-o" "*" "-i" "/home/niko/System/home-manager/walls/wall10.svg" "-m" "fill"]; }
 		];
 
 		environment = {
@@ -102,7 +102,7 @@
 			"Mod+Alt+L".action = spawn "swaylock";
 
 			"XF86AudioRaiseVolume".action = spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+";
-    		"XF86AudioLowerVolume".action = spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-";
+    	"XF86AudioLowerVolume".action = spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-";
 			"XF86AudioMute".action = spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle";
 			"XF86AudioMicMute".action = spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle";
 			"XF86AudioPlay".action = spawn "playerctl" "play-pause";
