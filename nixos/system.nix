@@ -19,6 +19,7 @@
     useXkbConfig = true;
   };
 
+
 	#desktop
   services.xserver = {
     enable = true;
@@ -29,9 +30,6 @@
     displayManager.gdm.enable = true;
   };
 
-	# xdg desktop portal
-  # xdg.portal.enable = true;
-  # xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
 	#graphics
   hardware.graphics = {
@@ -39,11 +37,13 @@
     enable32Bit = true;
   };
 
+
 	#sound
   services.pipewire = {
     enable = true;
     pulse.enable = true;
   };
+
 
 	#virtualisation
   virtualisation = {
@@ -53,6 +53,7 @@
     };
   };
 
+
 	#users
   users = {
     users.niko = {
@@ -61,11 +62,13 @@
     };
   };
 
+
 	#settings
   nix.settings = {
     trusted-users = ["root" "niko"];
     experimental-features = [ "nix-command" "flakes" ];
   };
+
 
 	#packages
   environment.systemPackages = with pkgs; [
@@ -105,6 +108,7 @@
     ];
   };
 	
+
 
 	
 	nixpkgs.config.allowUnfree = true;
