@@ -104,7 +104,7 @@
 			"XF86AudioRaiseVolume".action = spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+";
     		"XF86AudioLowerVolume".action = spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-";
 			"XF86AudioMute".action = spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle";
-			"XF86MicMute".action = spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle";
+			"XF86AudioMicMute".action = spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle";
 			"XF86AudioPlay".action = spawn "playerctl" "play-pause";
 			"XF86AudioNext".action = spawn "playerctl" "next";
 			"XF86AudioPrev".action = spawn "playerctl" "previous";
