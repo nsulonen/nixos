@@ -1,8 +1,8 @@
 { config, lib, pkgs, ... }:
 
 {
-  home.file = {
-    ".config/niri/config.kdl".text = ''
+  programs.niri.config = 
+    ''
     
     hotkey-overlay {
       skip-at-startup
@@ -289,5 +289,5 @@
         Mod+Shift+P { power-off-monitors; }
     }
     '';
-	};
+
 }
