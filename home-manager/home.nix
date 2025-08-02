@@ -1,6 +1,10 @@
 { config, lib, pkgs, ... }: 
 
 {
+  home-manager = {
+    enable = true;
+  };
+
   home = {
     username = "niko";
     homeDirectory = "/home/niko";
