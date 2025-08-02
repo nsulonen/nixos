@@ -5,6 +5,8 @@
     enable = true;
   };
 
+  programs.niri.enable = true;
+
   home = {
     username = "niko";
     homeDirectory = "/home/niko";
