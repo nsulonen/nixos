@@ -44,16 +44,6 @@
     pulse.enable = true;
   };
 
-
-	#virtualisation
-  virtualisation = {
-    podman = {
-      enable = true;
-      dockerCompat = true;
-    };
-  };
-
-
 	#users
   users = {
     users.niko = {
@@ -73,39 +63,11 @@
 	#packages
   environment.systemPackages = with pkgs; [
     git
-    # gh
-    # vscode
-    # distrobox
     vim
     wget
-    # obsidian
-    # devenv
-    # nautilus
   ];
-
-
-  #fonts packages
-  #fonts.packages = with pkgs; [
-  #  font-awesome
-  #];
-
-
-  #flatpaks
-  #services.flatpak = {
-  #  enable = true;
-  #
-  #  update.auto = {
-  #    enable = true;
-  #    onCalendar = "daily";
-  #  };
-  #
-  #  packages = [
-  #  "org.libreoffice.LibreOffice"
-  #  "app.zen_browser.zen"
-  #  "org.videolan.VLC"
-  #  ];
-  #};
 	
+
 	nixpkgs.config.allowUnfree = true;
 
   system.stateVersion = "25.05";
