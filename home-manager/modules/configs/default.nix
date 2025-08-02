@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./niri
+    # ./niri
     ./waybar
   ];
 }
