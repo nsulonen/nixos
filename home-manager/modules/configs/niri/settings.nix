@@ -82,7 +82,7 @@
 		spawn-at-startup = [
 			{ command = ["waybar"]; }
 			{ command = ["xwayland-satellite"]; }
-			{ command = ["swaybg" "-o" "*" "-i" "/home/niko/System/home-manager/walls/wall10.svg" "-m" "fill"]; }
+			{ command = ["swaybg" "-o" "*" "-i" "/home/niko/System/home-manager/walls/nixos.jpg" "-m" "fill"]; }
 		];
 
 		environment = {
