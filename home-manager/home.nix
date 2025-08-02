@@ -9,8 +9,8 @@
 
   imports = [
     ./modules/configs
+    ./modules/services
     ./modules/software
     ./modules/themes
-    ./modules/services
   ];
 }
