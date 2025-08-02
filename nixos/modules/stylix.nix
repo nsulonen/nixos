@@ -3,8 +3,8 @@
 {
   stylix = {
     enable = true;  
-    # base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
-    image = ../../home-manager/walls/nixos.jpg;
-    polarity = "dark";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
+    # image = ../../home-manager/walls/nixos.jpg;
+    # polarity = "dark";
   };
 }
