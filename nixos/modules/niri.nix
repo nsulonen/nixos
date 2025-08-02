@@ -1,15 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-    programs.niri.enable = true;
+    imports = [ niri.nixosModules.niri ];
 
-    #environment.systemPackages = with pkgs; [
-    #  alacritty
-    #  swaylock
-    #  swaybg
-    #  waybar
-    #  mako
-    #  fuzzel
-    #  xwayland-satellite
-    #];
+    programs.niri.enable = true;
 }
