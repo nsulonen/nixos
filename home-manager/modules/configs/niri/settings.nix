@@ -76,7 +76,7 @@
 
 			border.enable = false;
 
-			shadow-enable = false;
+			shadow.enable = false;
 		};
 
 		spawn-at-startup = [
