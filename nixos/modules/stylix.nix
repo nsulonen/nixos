@@ -3,7 +3,7 @@
 {
   stylix = {
     enable = true;  
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/ayu-dark.yaml";
     # image = ../../home-manager/walls/nixos.jpg;
     # polarity = "dark";
   };
