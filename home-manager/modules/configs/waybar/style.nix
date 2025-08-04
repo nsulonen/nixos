@@ -10,8 +10,8 @@
 		}
 
 		window#waybar {
-				background-color: #03060F;
-				border-right: 1px solid #292938;
+				background-color: #1e1e2e;
+				border-right: 1px solid #cdd6f4;
 				color: #ffffff;
 		}
 
@@ -93,7 +93,7 @@
 		#mpd,
 		#workspaces {
 				padding: 1rem 1rem;
-				color: #ffffff;
+				color: #cdd6f4;
 		}
 
 		#window,
