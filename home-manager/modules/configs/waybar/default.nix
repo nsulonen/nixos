@@ -88,6 +88,7 @@
 		}
 
 		#workspaces button {
+		    padding-right: 1rem;
 				background-color: transparent;
 				color: #ffffff;
 		}
@@ -122,8 +123,8 @@
 		#scratchpad,
 		#power-profiles-daemon,
 		#mpd,
-		#workspaces, {
-				padding: 1rem 1rem;
+		#workspaces {
+		    padding: 1rem 0.5rem;
 				color: #cdd6f4;
 		}
 
