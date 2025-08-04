@@ -7,20 +7,20 @@
       name = "Bibata-Modern-Ice";
       size = 30;
     };
-    #fonts = {
-    #  monospace = {
-    #    package = pkgs.nerd-fonts.jetbrains-mono;
-    #    name = "JetBrainsMono Nerd Font Mono";
-    #  };
-    #  sansSerif = {
-    #    package = pkgs.dejavu_fonts;
-    #    name = "DejaVu Sans";
-    #  };
-    #  serif = {
-    #    package = pkgs.dejavu_fonts;
-    #   name = "DejaVu Serif";
-    #  };
-    #};
+    fonts = {
+      monospace = {
+        package = pkgs.nerd-fonts.jetbrains-mono;
+        name = "JetBrainsMono Nerd Font Mono";
+      };
+      sansSerif = {
+        package = pkgs.dejavu_fonts;
+        name = "DejaVu Sans";
+      };
+      serif = {
+        package = pkgs.dejavu_fonts;
+       name = "DejaVu Serif";
+      };
+    };
   };
 
   gtk = {

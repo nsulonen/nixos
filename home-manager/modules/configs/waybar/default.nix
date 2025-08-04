@@ -1,9 +1,17 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   # disable stylix theming for waybar
   stylix.targets.waybar.addCss = false;
+
+  # enable fontconfig for font-awesome
   fonts.fontconfig.enable = true;
+
+  # install font-awesome
+  home.packages = [
+    pkgs.font-font-awesome
+  ];
+
 
   programs.waybar = {
 
