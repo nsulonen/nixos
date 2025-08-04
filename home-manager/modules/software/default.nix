@@ -55,7 +55,7 @@
       profiles = {
         "Default" = {
           userSettings = {
-            "editor.inlineSuggest.enabled": false;
+            "editor.inlineSuggest.enabled" = false;
           };
         };
       };
