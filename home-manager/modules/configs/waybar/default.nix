@@ -2,7 +2,7 @@
 
 {
   # disable stylix theming for waybar
-  stylix.targets.waybar.enable = false;
+  stylix.targets.waybar.addCss = false;
 
   programs.waybar = {
 
