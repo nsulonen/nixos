@@ -50,15 +50,8 @@
       enable = true;
     };
 
-    vscode = {
+    zed-editor = {
       enable = true;
-      profiles = {
-        "Default" = {
-          userSettings = {
-            "editor.inlineSuggest.enabled" = false;
-          };
-        };
-      };
     };
   };  
 }
