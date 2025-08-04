@@ -10,7 +10,7 @@
 		}
 
 		window#waybar {
-				background-color: #1e1e2e;
+				background-color: #181825;
 				border-right: 1px solid #cdd6f4;
 				color: #ffffff;
 		}
