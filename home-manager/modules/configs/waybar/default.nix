@@ -3,6 +3,7 @@
 {
   # disable stylix theming for waybar
   stylix.targets.waybar.addCss = false;
+  fonts.fontconfig.enable = true;
 
   programs.waybar = {
 
