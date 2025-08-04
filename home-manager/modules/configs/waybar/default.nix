@@ -1,16 +1,10 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
-  # disable stylix theming for waybar
-  stylix.targets.waybar.addCss = false;
-
-  # enable fontconfig for font-awesome
-  fonts.fontconfig.enable = true;
-
-  # install font-awesome
-  home.packages = [
-    pkgs.font-awesome
-  ];
+  # don't use monospace font
+  stylix.targets.waybar = {
+    addCss = false;
+  };
 
   programs.waybar = {
 
@@ -28,7 +22,7 @@
           format = "{icon}";
           format-icons = {
             active = "";
-            default = "";
+            default = "";
           };
         };
 
@@ -94,7 +88,6 @@
 		}
 
 		#workspaces button {
-				padding: 5px;
 				background-color: transparent;
 				color: #ffffff;
 		}
@@ -129,7 +122,7 @@
 		#scratchpad,
 		#power-profiles-daemon,
 		#mpd,
-		#workspaces {
+		#workspaces, {
 				padding: 1rem 1rem;
 				color: #cdd6f4;
 		}
