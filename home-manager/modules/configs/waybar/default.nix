@@ -9,9 +9,8 @@
 
   # install font-awesome
   home.packages = [
-    pkgs.font-font-awesome
+    pkgs.font-awesome
   ];
-
 
   programs.waybar = {
 
