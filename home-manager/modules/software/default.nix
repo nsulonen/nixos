@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   nixpkgs.config.allowUnfree = true;
@@ -11,6 +11,9 @@
 
     #tools
     devenv
+    swaybg
+    xwayland-satellite
+    nixd
 
     #file management
     nautilus
@@ -52,6 +55,23 @@
 
     zed-editor = {
       enable = true;
+      extensions = [ "nix" ];
     };
-  };  
+
+    ghostty = {
+      enable = true;
+    };
+
+    swaylock = {
+      enable = true;
+    };
+
+    waybar = {
+      enable = true;
+    };
+
+    fuzzel = {
+      enable = true;
+    };
+  };
 }

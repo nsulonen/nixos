@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ ... }:
 
 {
   services = {
@@ -7,7 +7,12 @@
     podman = {
       enable = true;
     };
+
+    #mako for notifications
+    mako = {
+      enable = true;
+    };
   };
-  
+
   systemd.user.startServices = "sd-switch";
 }

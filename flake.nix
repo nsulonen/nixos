@@ -1,19 +1,22 @@
 {
     description = "NixOS system flake";
-    
+
     inputs = {
 
         nixpkgs.url = "nixpkgs/nixos-25.05";
 
         niri.url = "github:sodiboo/niri-flake";
 
-        stylix.url = "github:nix-community/stylix/release-25.05";
+        stylix = {
+          url = "github:nix-community/stylix/release-25.05";
+          inputs.nixpkgs.follows = "nixpkgs";
+        };
 
         home-manager = {
             url = "github:nix-community/home-manager/release-25.05";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        
+
         # nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     };
 
@@ -28,7 +31,7 @@
                 	# nix-flatpak.nixosModules.nix-flatpak
                 	stylix.nixosModules.stylix
                 	niri.nixosModules.niri
-                
+
                 	home-manager.nixosModules.home-manager {
                     	home-manager = {
                         	useGlobalPkgs = false;
@@ -50,7 +53,7 @@
                 	# nix-flatpak.nixosModules.nix-flatpak
                 	stylix.nixosModules.stylix
                 	niri.nixosModules.niri
-                
+
                 	home-manager.nixosModules.home-manager {
                     	home-manager = {
                         	useGlobalPkgs = false;
@@ -63,6 +66,6 @@
                 	}
             	];
         	};
-    	};          
+    	};
 	};
 }

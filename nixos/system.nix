@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   #bootloader
@@ -66,7 +66,7 @@
     vim
     wget
   ];
-	
+
 
 	nixpkgs.config.allowUnfree = true;
 

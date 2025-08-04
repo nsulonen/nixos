@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   home.pointerCursor = {
@@ -6,5 +6,5 @@
     name = "catppuccin-mocha-light-cursors";
     package = pkgs.catppuccin-cursors.mochaLight;
     size = 30;
-  }; 
+  };
 }

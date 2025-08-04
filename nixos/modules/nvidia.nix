@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, ... }:
 
 {
     hardware.nvidia = {
@@ -10,6 +10,6 @@
 
         package = config.boot.kernelPackages.nvidiaPackages.latest;
     };
-  
+
     services.xserver.videoDrivers = [ "nvidia" ];
 }

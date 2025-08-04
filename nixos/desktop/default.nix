@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ ... }:
 
 {
   imports = [
@@ -10,4 +10,3 @@
     ../modules/stylix.nix
   ];
 }
-

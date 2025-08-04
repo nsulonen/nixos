@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }: 
+{ ... }:
 
 {
   programs.home-manager = {
@@ -15,6 +15,6 @@
     ./modules/configs
     ./modules/services
     ./modules/software
-    ./modules/themes
+    ./modules/stylix
   ];
 }
