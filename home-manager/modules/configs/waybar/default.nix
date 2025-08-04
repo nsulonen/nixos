@@ -21,8 +21,8 @@
         "niri/workspaces" = {
           format = "{icon}";
           format-icons = {
-            active = "";
-            default = "";
+            active = "";
+            default = "";
           };
         };
 
@@ -124,7 +124,7 @@
 		#power-profiles-daemon,
 		#mpd,
 		#workspaces {
-		    padding: 1rem 0.5rem;
+		    padding: 1rem 0.3rem;
 				color: #cdd6f4;
 		}
 
