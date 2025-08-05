@@ -2,7 +2,7 @@
 
 {
   # enable theming for zen-browser
-  stylix.target.zen-browser.profileNames = [ "default" ];
+  stylix.targets.zen-browser.profileNames = [ "default" ];
 
   stylix = {
     cursor = {
