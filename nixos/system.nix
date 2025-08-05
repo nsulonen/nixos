@@ -5,11 +5,9 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-
   #networking
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
-
 
   #locale
   time.timeZone = "Europe/Helsinki";
@@ -19,32 +17,31 @@
     useXkbConfig = true;
   };
 
-
-	#desktop
-  services.xserver = {
-    enable = true;
-    xkb.layout = "fi";
-    xkb.options = "eurosign:e,caps:escape";
+  #desktop
+  services = {
+    xserver = {
+      enable = true;
+      xkb.layout = "fi";
+      xkb.options = "eurosign:e,caps:escape";
+    };
 
     #login manager
     displayManager.gdm.enable = true;
   };
 
-
-	#graphics
+  #graphics
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
   };
 
-
-	#sound
+  #sound
   services.pipewire = {
     enable = true;
     pulse.enable = true;
   };
 
-	#users
+  #users
   users = {
     users.niko = {
       isNormalUser = true;
@@ -52,23 +49,26 @@
     };
   };
 
-
-	#settings
+  #settings
   nix.settings = {
-    trusted-users = ["root" "niko"];
-    experimental-features = [ "nix-command" "flakes" ];
+    trusted-users = [
+      "root"
+      "niko"
+    ];
+    experimental-features = [
+      "nix-command"
+      "flakes"
+    ];
   };
 
-
-	#packages
+  #packages
   environment.systemPackages = with pkgs; [
     git
     vim
     wget
   ];
 
-
-	nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnfree = true;
 
   system.stateVersion = "25.05";
 }
