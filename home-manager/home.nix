@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ ... }:
 
 {
   programs.home-manager = {
@@ -16,6 +16,5 @@
     ./modules/services
     ./modules/software
     ./modules/stylix
-    inputs.zen-browser.homeModules.twilight
   ];
 }

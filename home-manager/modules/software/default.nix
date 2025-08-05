@@ -31,6 +31,10 @@
       enable = true;
     };
 
+    zen-browser = {
+      enable = true;
+    };
+
     gh = {
       enable = true;
       hosts = {
