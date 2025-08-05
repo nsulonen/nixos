@@ -43,7 +43,7 @@
       		window#waybar {
       				/* background-color: #181825; */
       				border-right: 1px solid #1E242A;
-      				color: #ffffff;
+      				/* color: #ffffff; */
       		}
 
       		window#waybar.hidden {
@@ -89,7 +89,7 @@
       		#workspaces button {
       		    padding-right: 1rem; /* keeps buttons aligned horizontally */
       				background-color: transparent;
-      				color: #ffffff;
+      				/* color: #ffffff; */
       		}
 
       		#workspaces button.focused {
@@ -124,7 +124,7 @@
       		#mpd,
       		#workspaces {
       		    padding: 1rem 0.3rem;
-      				color: #cdd6f4;
+      				/* color: #cdd6f4; */
       		}
 
       		#window,
