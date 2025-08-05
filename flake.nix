@@ -3,31 +3,30 @@
 
     inputs = {
 
-        nixpkgs.url = "nixpkgs/nixos-25.05";
+        nixpkgs.url = "nixpkgs/nixos-unstable";
 
         niri.url = "github:sodiboo/niri-flake";
 
         stylix = {
-          url = "github:nix-community/stylix/release-25.05";
+          url = "github:nix-community/stylix";
           inputs.nixpkgs.follows = "nixpkgs";
         };
 
         zen-browser = {
           url = "github:0xc000022070/zen-browser-flake";
-          # IMPORTANT: we're using "libgbm" and is only available in unstable so ensure
-          # to have it up-to-date or simply don't specify the nixpkgs input
           inputs.nixpkgs.follows = "nixpkgs";
+          inputs.home-manager.follows = "home-manager";
         };
 
         home-manager = {
-            url = "github:nix-community/home-manager/release-25.05";
+            url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
         # nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     };
 
-    outputs = { nixpkgs, stylix, niri, zen-browser, home-manager, ... }@inputs: {
+    outputs = { nixpkgs, stylix, niri, home-manager, ... }@inputs: {
 
         nixosConfigurations = {
             desktop = nixpkgs.lib.nixosSystem {
@@ -38,9 +37,9 @@
                 	# nix-flatpak.nixosModules.nix-flatpak
                 	stylix.nixosModules.stylix
                 	niri.nixosModules.niri
-                  zen-browser.homeModules.twilight
+                  #zen-browser.homeModules.twilight
 
-                	(home-manager.nixosModules.home-manager {
+                	home-manager.nixosModules.home-manager {
                     	home-manager = {
                         	useGlobalPkgs = false;
                         	useUserPackages = true;
@@ -49,7 +48,7 @@
                             	imports = [ ./home-manager/home.nix ];
                         	};
                     	};
-                	})
+                	}
             	];
         	};
 
