@@ -31,7 +31,7 @@
     };
 
     firefox = {
-      enable = true;
+      enable = false;
     };
 
     zen-browser = {
