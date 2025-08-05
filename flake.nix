@@ -40,7 +40,7 @@
                 	niri.nixosModules.niri
                   zen-browser.homeModules.twilight
 
-                	home-manager.nixosModules.home-manager {
+                	(home-manager.nixosModules.home-manager {
                     	home-manager = {
                         	useGlobalPkgs = false;
                         	useUserPackages = true;
@@ -49,7 +49,7 @@
                             	imports = [ ./home-manager/home.nix ];
                         	};
                     	};
-                	}
+                	})
             	];
         	};
 
