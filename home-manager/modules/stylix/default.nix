@@ -1,6 +1,9 @@
 { pkgs, ... }:
 
 {
+  # enable theming for zen-browser
+  stylix.target.zen-browser.profileNames = [ "default" ];
+
   stylix = {
     cursor = {
       package = pkgs.bibata-cursors;
@@ -18,7 +21,7 @@
       };
       serif = {
         package = pkgs.dejavu_fonts;
-       name = "DejaVu Serif";
+        name = "DejaVu Serif";
       };
     };
   };

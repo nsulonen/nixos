@@ -27,8 +27,8 @@
   programs = {
 
     distrobox = {
-		  enable = true;
-	  };
+      enable = true;
+    };
 
     firefox = {
       enable = true;
