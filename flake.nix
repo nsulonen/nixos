@@ -38,6 +38,7 @@
                 	# nix-flatpak.nixosModules.nix-flatpak
                 	stylix.nixosModules.stylix
                 	niri.nixosModules.niri
+                  zen-browser.homeModules.twilight
 
                 	home-manager.nixosModules.home-manager {
                     	home-manager = {
@@ -45,10 +46,7 @@
                         	useUserPackages = true;
                         	backupFileExtension = "backup";
                         	users.niko = {
-                            	imports = [
-                                  ./home-manager/home.nix
-                                  zen-browser.homeModules.zen-browser
-                              ];
+                            	imports = [ ./home-manager/home.nix ];
                         	};
                     	};
                 	}
