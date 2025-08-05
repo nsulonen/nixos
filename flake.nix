@@ -27,7 +27,7 @@
         # nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     };
 
-    outputs = { nixpkgs, stylix, niri, home-manager, ... }@inputs: {
+    outputs = { nixpkgs, stylix, niri, zen-browser, home-manager, ... }@inputs: {
 
         nixosConfigurations = {
             desktop = nixpkgs.lib.nixosSystem {
@@ -47,7 +47,7 @@
                         	users.niko = {
                             	imports = [
                                   ./home-manager/home.nix
-                                  inputs.zen-browser.homeModules.zen-browser
+                                  zen-browser.homeModules.zen-browser
                               ];
                         	};
                     	};
