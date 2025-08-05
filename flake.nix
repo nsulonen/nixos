@@ -22,11 +22,16 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-        # nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
   };
 
-  outputs = { nixpkgs, stylix, niri, home-manager, ... }@inputs: {
+  outputs = {
+    nixpkgs,
+    stylix,
+    niri,
+    zen-browser,
+    home-manager,
+    ...
+  }@inputs: {
 
     nixosConfigurations = {
       desktop = nixpkgs.lib.nixosSystem {
@@ -34,7 +39,6 @@
         specialArgs = { inherit inputs; };
         modules = [
           ./nixos/desktop
-          # nix-flatpak.nixosModules.nix-flatpak
           stylix.nixosModules.stylix
           niri.nixosModules.niri
 
@@ -46,7 +50,7 @@
               users.niko = {
                 imports = [
                   ./home-manager/home.nix
-                  inputs.zen-browser.homeModules.twilight
+                  zen-browser.homeModules.twilight
                 ];
               };
             };
@@ -59,7 +63,6 @@
         specialArgs = { inherit inputs; };
         modules = [
           ./nixos/laptop
-          # nix-flatpak.nixosModules.nix-flatpak
           stylix.nixosModules.stylix
           niri.nixosModules.niri
 
@@ -71,7 +74,7 @@
               users.niko = {
                 imports = [
                   ./home-manager/home.nix
-                  inputs.zen-browser.homeModules.twilight
+                  zen-browser.homeModules.twilight
                 ];
               };
             };
