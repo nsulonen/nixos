@@ -88,7 +88,7 @@
 		}
 
 		#workspaces button {
-		    padding-right: 1rem;
+		    padding-right: 1rem; /* keeps buttons aligned horizontally */
 				background-color: transparent;
 				color: #ffffff;
 		}
