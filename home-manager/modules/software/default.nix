@@ -13,7 +13,10 @@
     devenv
     swaybg
     xwayland-satellite
+
+    #lsp
     nixd
+    nil
 
     #file management
     nautilus
