@@ -77,7 +77,7 @@
       focus-ring.enable = false;
 
       border = {
-        enable = true;
+        enable = false;
         width = 1.0;
       };
 
