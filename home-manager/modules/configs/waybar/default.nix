@@ -42,7 +42,7 @@
 
       		window#waybar {
       				/* background-color: #181825; */
-      				border-right: 1px solid #1E242A;
+      				border-right: 1px solid #5C6773;
       				/* color: #ffffff; */
       		}
 

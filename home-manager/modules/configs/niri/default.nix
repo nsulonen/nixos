@@ -76,7 +76,10 @@
 
       focus-ring.enable = false;
 
-      border.enable = false;
+      border = {
+        enable = true;
+        width = 1.0;
+      };
 
       shadow.enable = false;
     };
@@ -90,7 +93,7 @@
           "-o"
           "*"
           "-i"
-          "/home/niko/System/home-manager/walls/nix-ayu-dark.png"
+          "/home/niko/System/home-manager/walls/waves-blue.png"
           "-m"
           "fill"
         ];
@@ -104,6 +107,18 @@
     };
 
     prefer-no-csd = true;
+
+    window-rules = [
+      {
+        geometry-corner-radius = {
+          top-left = 0.0;
+          top-right = 0.0;
+          bottom-right = 0.0;
+          bottom-left = 0.0;
+        };
+        clip-to-geometry = true;
+      }
+    ];
 
     animations.enable = true;
 
