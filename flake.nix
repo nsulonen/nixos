@@ -24,63 +24,46 @@
     };
   };
 
-  outputs = {
-    nixpkgs,
-    stylix,
-    niri,
-    zen-browser,
-    home-manager,
-    ...
-  }@inputs: {
-
-    nixosConfigurations = {
-      desktop = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
-        modules = [
-          ./nixos/desktop
-          stylix.nixosModules.stylix
-          niri.nixosModules.niri
-
-          home-manager.nixosModules.home-manager {
-            home-manager = {
-              useGlobalPkgs = false;
-              useUserPackages = true;
-              backupFileExtension = "backup";
-              users.niko = {
-                imports = [
-                  ./home-manager/home.nix
-                  zen-browser.homeModules.twilight
-                ];
+  outputs =
+    {
+      nixpkgs,
+      stylix,
+      niri,
+      zen-browser,
+      home-manager,
+      ...
+    }@inputs:
+    let
+      makeSystem =
+        systemConfigFile:
+        nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          specialArgs = { inherit inputs; };
+          modules = [
+            systemConfigFile
+            stylix.nixosModules.stylix
+            niri.nixosModules.niri
+            home-manager.nixosModules.home-manager
+            {
+              home-manager = {
+                useGlobalPkgs = false;
+                useUserPackages = true;
+                backupFileExtension = "backup";
+                users.niko = {
+                  imports = [
+                    ./home-manager/home.nix
+                    zen-browser.homeModules.twilight
+                  ];
+                };
               };
-            };
-          }
-        ];
-      };
-
-      laptop = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
-        modules = [
-          ./nixos/laptop
-          stylix.nixosModules.stylix
-          niri.nixosModules.niri
-
-          home-manager.nixosModules.home-manager {
-            home-manager = {
-              useGlobalPkgs = false;
-              useUserPackages = true;
-              backupFileExtension = "backup";
-              users.niko = {
-                imports = [
-                  ./home-manager/home.nix
-                  zen-browser.homeModules.twilight
-                ];
-              };
-            };
-          }
-        ];
+            }
+          ];
+        };
+    in
+    {
+      nixosConfigurations = {
+        desktop = makeSystem ./nixos/desktop;
+        laptop = makeSystem ./nixos/laptop;
       };
     };
-	};
 }
