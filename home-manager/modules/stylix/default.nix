@@ -7,8 +7,8 @@
   stylix = {
     cursor = {
       package = pkgs.bibata-cursors;
-      name = "Bibata-Modern-Ice";
-      size = 30;
+      name = "Bibata-Original-Ice";
+      size = 36;
     };
     fonts = {
       monospace = {
