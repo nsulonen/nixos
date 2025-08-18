@@ -93,7 +93,7 @@
           "-o"
           "*"
           "-i"
-          "/home/niko/System/home-manager/walls/waves-blue.png"
+          "/home/niko/System/home-manager/walls/ripples.png"
           "-m"
           "fill"
         ];
