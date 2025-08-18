@@ -25,3 +25,9 @@ Switch to the desktop system configuration:
 
 ```bash
 sudo nixos-rebuild switch --flake .#desktop
+```
+
+For laptop configuration:
+
+``bash
+sudo nixos-rebuild switch --flake .#laptop
