@@ -2,7 +2,7 @@
 
 {
   imports = [
-    /etc/nixos/hardware-configuration.nix
+    ./hardware.nix
     ../system.nix
     ../modules/niri.nix
     ../modules/stylix.nix
