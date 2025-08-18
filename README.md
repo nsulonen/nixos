@@ -29,5 +29,5 @@ sudo nixos-rebuild switch --flake .#desktop
 
 For laptop configuration:
 
-``bash
+```bash
 sudo nixos-rebuild switch --flake .#laptop
