@@ -9,7 +9,11 @@
   programs.waybar = {
 
     settings = {
-      mainBar = {
+      desktop = {
+        output = [
+          "DP-1"
+          "DP-3"
+        ];
         layer = "top";
         position = "left";
         spacing = 4;
@@ -17,6 +21,33 @@
         modules-left = [ "niri/workspaces" ];
         modules-center = [ ];
         modules-right = [ "clock" ];
+
+        "niri/workspaces" = {
+          format = "{icon}";
+          format-icons = {
+            active = "";
+            default = "";
+          };
+        };
+
+        "clock" = {
+          format = "{:%H\n%M}";
+          tooltip = false;
+        };
+      };
+
+      laptop = {
+        output = [ "eDP-1" ];
+        layer = "top";
+        position = "right";
+        spacing = 4;
+
+        modules-left = [ "niri/workspaces" ];
+        modules-center = [ ];
+        modules-right = [
+          "battery"
+          "clock"
+        ];
 
         "niri/workspaces" = {
           format = "{icon}";
