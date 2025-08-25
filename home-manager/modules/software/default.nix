@@ -13,6 +13,7 @@
     devenv
     swaybg
     xwayland-satellite
+    brightnessctl
 
     #lsp
     nixd
@@ -67,7 +68,7 @@
 
     ghostty = {
       enable = true;
-      
+
       settings = {
         window-padding-x = 20;
       };
