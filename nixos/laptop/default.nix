@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -6,5 +6,9 @@
     ../system.nix
     ../modules/niri.nix
     ../modules/stylix.nix
+  ];
+
+  environment.systemPackages = with pkgs; [
+    brightnessctl
   ];
 }

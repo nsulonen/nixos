@@ -13,7 +13,6 @@
     devenv
     swaybg
     xwayland-satellite
-    brightnessctl
 
     #lsp
     nixd
