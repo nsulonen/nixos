@@ -57,6 +57,10 @@
           };
         };
 
+        "battery" = {
+
+        };
+
         "clock" = {
           format = "{:%H\n%M}";
           tooltip = false;
@@ -178,8 +182,8 @@
       		}
 
       		#battery {
-      				background-color: #ffffff;
-      				color: #000000;
+      				/* background-color: #ffffff; */
+      				/* color: #000000; */
       		}
 
       		#battery.charging, #battery.plugged {
